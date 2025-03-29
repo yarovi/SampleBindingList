@@ -1,6 +1,6 @@
 ﻿namespace WinFormsAppClientOrder
 {
-    partial class Form1
+    partial class FormBinding
     {
         /// <summary>
         ///  Required designer variable.
@@ -37,7 +37,7 @@
 			// 
 			// btnInsert
 			// 
-			btnInsert.Location = new Point(99, 62);
+			btnInsert.Location = new Point(20, 27);
 			btnInsert.Name = "btnInsert";
 			btnInsert.Size = new Size(94, 29);
 			btnInsert.TabIndex = 0;
@@ -47,7 +47,7 @@
 			// 
 			// btnLoad
 			// 
-			btnLoad.Location = new Point(98, 122);
+			btnLoad.Location = new Point(19, 87);
 			btnLoad.Name = "btnLoad";
 			btnLoad.Size = new Size(94, 29);
 			btnLoad.TabIndex = 1;
@@ -57,7 +57,7 @@
 			// 
 			// btnGridView
 			// 
-			btnGridView.Location = new Point(103, 180);
+			btnGridView.Location = new Point(24, 145);
 			btnGridView.Name = "btnGridView";
 			btnGridView.Size = new Size(94, 29);
 			btnGridView.TabIndex = 2;
@@ -68,24 +68,24 @@
 			// dgv
 			// 
 			dgv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			dgv.Location = new Point(251, 62);
+			dgv.Location = new Point(172, 27);
 			dgv.Name = "dgv";
 			dgv.RowHeadersWidth = 51;
 			dgv.Size = new Size(465, 188);
 			dgv.TabIndex = 3;
 			dgv.CellEndEdit += dgv_CellEndEdit;
 			// 
-			// Form1
+			// FormBinding
 			// 
 			AutoScaleDimensions = new SizeF(8F, 20F);
 			AutoScaleMode = AutoScaleMode.Font;
-			ClientSize = new Size(800, 450);
+			ClientSize = new Size(668, 232);
 			Controls.Add(dgv);
 			Controls.Add(btnGridView);
 			Controls.Add(btnLoad);
 			Controls.Add(btnInsert);
-			Name = "Form1";
-			Text = "Form1";
+			Name = "FormBinding";
+			Text = "SampleBinding";
 			((System.ComponentModel.ISupportInitialize)dgv).EndInit();
 			ResumeLayout(false);
 		}

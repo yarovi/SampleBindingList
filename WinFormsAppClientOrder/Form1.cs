@@ -6,10 +6,10 @@ using WinFormsAppClientOrder.entity;
 
 namespace WinFormsAppClientOrder
 {
-	public partial class Form1 : Form
+	public partial class FormBinding : Form
 	{
 		BindingList<Cliente> clientesList = new BindingList<Cliente>();
-		public Form1()
+		public FormBinding()
 		{
 			InitializeComponent();
 			using(var context = new AppDbContext())
@@ -46,7 +46,6 @@ namespace WinFormsAppClientOrder
 				Debug.WriteLine("Cliente y órdenes guardadas. -> " + cliente);
 			}
 		}
-
 		private void btnLoad_Click(object sender, EventArgs e)
 		{
 
@@ -110,6 +109,5 @@ namespace WinFormsAppClientOrder
 				MessageBox.Show($"Error al actualizar: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
 		}
-
 	}
 }
